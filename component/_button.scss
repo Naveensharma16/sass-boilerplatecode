@@ -1,0 +1,45 @@
+@use "../abstract" as buttonMixins;
+
+.white-button{
+    @include buttonMixins.btn-design();
+    background-color: var(--pure-white);
+    color: var(--pure-black);
+    &:hover{
+        color: var(--brand);
+        box-shadow: 0px 6px 8px 3px rgba($color: #0b0a0a, $alpha: 0.1);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.not-so-black-button{
+    @include buttonMixins.btn-design();
+    background-color: var(--not-pure-dark);
+    color: var(--pure-white);
+    &:hover{
+        background-color: var(--not-so-dark);
+        box-shadow: 0px 6px 8px 3px rgba($color: #0b0a0a, $alpha: 0.1);
+        transition: all 0.3s ease-in-out; 
+    }
+}
+
+.brand-button{
+    @include buttonMixins.btn-design();
+    background-color: var(--brand);
+    color: var(--pure-white);
+    &:hover{
+     
+        box-shadow: 0px 6px 8px 3px rgba($color: #0b0a0a, $alpha: 0.1);
+        transition: all 0.3s ease-in-out; 
+    }
+}
+
+
+.download-for-os{
+    @include buttonMixins.btn-design();
+    width: unset;
+    background-color: var(--not-pure-dark);
+    color: var(--pure-white);
+    padding: .8rem 1.7rem;
+    display: inline-block;
+    margin-block: 2rem 3.5rem;
+}

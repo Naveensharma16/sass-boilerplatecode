@@ -1,0 +1,107 @@
+.hero-section{
+    background-color:#404eed;
+    padding: 13.2rem 0 8.2rem;
+    position: relative;
+    .hero-content{
+        width: calc( 100vw - 15rem);
+        max-width: var(--desktop-width);
+        margin-inline: auto;
+        text-align: center;
+      
+        h1{
+            font-weight: 800;
+            font-size: 3.8rem;
+            color: var(--pure-white);
+            margin-bottom: 0.8rem;
+        }
+        p{
+            font-size: 1.2rem;
+            color: var(--pure-white);
+        }
+    }
+
+    .button-outer{
+        margin-top: 2rem;
+        a{
+            &:first-child{
+                margin-right: 1.1rem;
+            }
+        }
+    }
+
+
+}
+
+
+.home-flex-container{
+    padding: 6rem 0;
+
+    .inside-wrapper{
+        width: var(--desktop-width);
+        display: flex;
+        margin-inline: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .img-box{
+       width: 57%;
+       img{
+        width: 100%;
+        height: auto;
+       }
+    }
+    .content-box{
+       width: 35%;
+       h2{
+         font-size: 2.5rem;
+       }
+       p{
+        color: var(--pure-black);
+       }
+    }
+
+    &:nth-child(even){
+        background-color: var(--off-white);
+        .inside-wrapper{
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+
+.bottom-hero-container{
+    background-color: var(--off-white);
+    padding: 6rem 0;
+
+    .description{
+       width: var(--desktop-width);
+       margin-inline: auto;
+       text-align: center;
+       h3{
+        font-size: 2.7rem;
+        color: var(--not-pure-black);
+        font-weight: bolder;
+        margin-bottom: 1rem;
+       }
+       p{
+        font-size: 1rem;
+        color: var(--not-so-black);
+        padding: 0px 10rem;
+       }
+    }
+    .our-chat-window{
+        text-align: center;
+        img{
+            width: 70%;
+        }
+    }
+    .ready-go{
+        text-align: center;
+        width: var(--desktop-width);
+        margin-inline: auto;
+        margin-top: 4.5rem;
+        h3{
+            font-size: 2.3rem;
+        }
+    }
+}

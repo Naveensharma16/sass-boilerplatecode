@@ -1,0 +1,80 @@
+.footer-container{
+    padding: 3.6rem 0 3rem;
+    background-color: var(--not-pure-dark);
+
+    .footer-holder{
+        width: var(--desktop-width);
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--brand);
+        padding-bottom: 4rem;
+        .footer-first-box{
+            width: 20%;
+            h3{
+                font-size: 2rem;
+                color: var(--brand);
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                padding: 0;
+                justify-content: flex-start;
+                column-gap: 0.8rem;
+                svg{
+                    width: 1.5rem;
+                }
+            }
+        }
+        .footer-other-box{
+            width: 12%;
+            h6{
+                font-size: 1rem;
+                color: var(--brand);
+                font-family: var(--textfont);
+                font-weight: normal;
+                margin-block: 0rem;
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                li{
+                   line-height: 2rem;
+                    a{
+                        color: var(--pure-white);
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-signup{
+        width: var(--desktop-width);
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+        .footer-logo{
+            width: 10%;
+            img{
+                width: 8rem;
+            }
+        }
+        .btm-signup-btn{
+            width: 10%;
+            text-align: right;
+            a{
+                background-color: var(--brand);
+                color: var(--pure-white);
+                padding: 0.5rem 0.9rem;
+                border-radius: 2rem;
+                font-size: .8rem;
+                line-height: 1.8;
+            }
+        }
+    }
+}
